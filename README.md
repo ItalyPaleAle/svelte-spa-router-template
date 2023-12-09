@@ -28,7 +28,7 @@ cd svelte-app
 npm install
 ```
 
-…then start [Rollup](https://rollupjs.org):
+…then start a dev server using [Vite](https://vite.dev):
 
 ```bash
 npm run dev
@@ -36,9 +36,9 @@ npm run dev
 
 Navigate to [http://localhost:5050](http://localhost:5050). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
 
-You can add more routes by defining them in the [`src/routes.ts`](./src/routes.ts) file. More information can be found on the [documentation for svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router/blob/master/README.md).
+You can add more routes by defining them in the [`src/routes.ts`](./src/routes.ts) file. More information can be found on the [documentation for svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router/blob/main/README.md).
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `vite` commands in package.json to include the option `--host 0.0.0.0`.
 
 If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
 
@@ -50,5 +50,4 @@ To create an optimized version of the app:
 npm run build
 ```
 
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv) too.
-
+You can run the newly-built app with `npm run preview`.

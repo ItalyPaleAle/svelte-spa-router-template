@@ -1,10 +1,10 @@
-<script>
-    export let params = {};
+<script lang="ts">
+    export let params: {repeat?: string} = {};
 
     let repeat = 1;
     $: {
         repeat = 1
-        if (params && params.repeat) {
+        if (params?.repeat) {
             repeat = parseInt(params.repeat, 10)
             if (repeat < 1) {
                 repeat = 1
