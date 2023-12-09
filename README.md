@@ -11,22 +11,11 @@
 
 # Svelte app with svelte-spa-router
 
-This is a project template for [Svelte](https://svelte.dev) apps that includes [svelte-spa-router](https://github.com/italypaleale/svelte-spa-router) for client-side routing, and Rollup as bundler.
-
-This template is based on the official template for Svelte: [sveltejs/template](https://github.com/sveltejs/template).
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit italypaleale/svelte-spa-router-template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+This is a project template for [Svelte 4](https://svelte.dev) apps that includes [svelte-spa-router](https://github.com/italypaleale/svelte-spa-router) for client-side routing, TypeScript, and Vite as bundler.
 
 ## About svelte-spa-router
 
-svelte-spa-router is a client-side router for Svelte 3 apps that leverages hash-based routing (i.e. stores the current view in the URL after the `#` symbol).
+svelte-spa-router is a client-side router for Svelte 4 apps that leverages hash-based routing (i.e. stores the current view in the URL after the `#` symbol).
 
 You can read more about the router, and the reasons why you might want to use hash-based routing (or not), in the [documentation](https://github.com/italypaleale/svelte-spa-router).
 
@@ -45,9 +34,9 @@ npm install
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to [http://localhost:5050](http://localhost:5050). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
 
-You can add more routes by defining them in the `src/routes.js` file. More information can be found on the [documentation for svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router/blob/master/README.md).
+You can add more routes by defining them in the [`src/routes.ts`](./src/routes.ts) file. More information can be found on the [documentation for svelte-spa-router](https://github.com/ItalyPaleAle/svelte-spa-router/blob/master/README.md).
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
@@ -63,16 +52,3 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv) too.
 
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
